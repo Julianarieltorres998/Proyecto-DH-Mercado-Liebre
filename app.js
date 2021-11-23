@@ -15,6 +15,6 @@ app.get('/register.html', (req, res) => {
   res.sendFile(__dirname + "/views/register.html");
 })
 
-app.get('/register.html', (req, res) => {
+app.get('/login.html', (req, res) => {
   res.sendFile(__dirname + "/views/login.html");
 })
