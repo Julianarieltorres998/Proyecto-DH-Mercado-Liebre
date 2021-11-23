@@ -5,7 +5,7 @@ app.use(express.static('public'));
 
 app.use(express.static('views'));
 
-app.listen(3000, () => console.log(`Servidor funcionando`));
+app.listen(process.env.PORT || 3000, () => console.log(`Servidor funcionando`));
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/views/home.html");
