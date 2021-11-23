@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+<body>
+    <header>
+        <section class="headerAmarillo">
+            <div class="logoybusqueda">
+                <img src="images/logo-mercado-liebre.svg" class="logo" width="180" alt="Logo de MercadoLiebre">
+            <form action="" method="get" class="barraDeBusqueda">
+                <input type="text" placeholder="Buscar productos, marcas">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            <p class="alineadoAlCentro"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+
+            
+            
+            <nav class="lista">
+                <ul class="paraLaIzquierda">
+                    <li><a href="#" class="listaAColorNegro">Ofertas</a></li>
+                    <li><a href="#" class="listaAColorNegro">Tiendas Oficiales</a></li>
+                    <li><a href="#" class="listaAColorNegro">Vender</a></li>
+                    <li><a href="#" class="listaAColorNegro">Ayuda</a></li>
+                </ul>
+                <ul class="paraLaDerecha">
+                    <li><a href="/register.html" class="listaAColorNegro">Creá tu cuenta</a><i class="far fa-id-card" id="movidoALaDerecha"></i></li>
+                    <li><a href="/login.html" class="listaAColorNegro">Ingresá</a><i class="fas fa-sign-in-alt" id="movidoALaDerecha"></i></li>
+                    <li><a href="#" class="listaAColorNegro">Mis compras</a><i class="fas fa-shopping-basket" id="movidoALaDerecha"></i></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </section>
+    </header>
+
+    <form action="/register.html" method="post" class="formularioRegistro">
+
+        <h4>Registro</h4>
+
+        <div class="divDelFormulario">
+            <label>Nombre y apellido:</label>
+            <input type="text" placeholder="Escribe tu Nombre y Apellido..." required class="passwordInput">
+        </div>
+        
+        <div class="divDelFormulario">
+            <label>Nombre de Usuari@:</label>
+            <input type="text" placeholder="Escribe tu Nombre de Usuario..." required class="passwordInput">
+        </div>
+
+        <div class=divDelFormulario">
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" min="1900-01-01" required class="passwordInput">
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Domicilio:</label>
+            <input type="text" placeholder="Escribe tu Domicilio..." required class="passwordInput">
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Perfil del Usuario:</label>
+            <input type="radio" value="comprador" class="passwordInput" required>Comprador
+            <input type="radio" value="vendedor" class="passwordInput">Vendedor
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Categorías de Interés:</label>
+            <input type="checkbox" value="electro" class="passwordInput" required>Electro
+            <input type="checkbox" value="moda" class="passwordInput">Moda
+            <input type="checkbox" value="hogar" class="passwordInput">Hogar
+            <input type="checkbox" value="jugueteria" class="passwordInput">Juguetería
+            <input type="checkbox" value="vida-sana" class="passwordInput">Vida sana
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Foto de Usuario:</label>
+            <input type="file" accept=".png, .jpg" required class="passwordInput">
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Contraseña:</label>
+            <input type="password" required class="passwordInput">
+        </div>
+
+        <div class="divDelFormulario">
+            <label>Confirmar contraseña:</label>
+            <input type="password" required class="passwordInput">
+        </div>
+
+        <div class="divDelFormulario">
+            <input type="submit" class="boton" required class="passwordInput">
+            <input type="reset" class="boton" class="passwordInput" value="Borrar">
+        </div>
+    </form>
+
+    <footer>
+        <section class="footer">
+            <article class="footer__ultimaSeccion">
+                <i class="fas fa-credit-card fa-3x" id="tarjetaDeCredito"></i>
+                <h3 class="rresaltador">Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+
+            <article class="footer__ultimaSeccion">
+                <i class="fas fa-gift fa-3x" id="regalo"></i>
+                <h3 class="resaltador">Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos</p>
+            </article>
+
+            <article class="footer__ultimaSeccion">
+                <i class="fas fa-user-shield fa-3x" id="escudo"></i>
+                <h3 class="resaltador">Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </article>
+
+            
+        </section>
+        
+        <div class="final__copy">
+            <h5 class="final__copy-h5">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+        </div>
+    </footer>
+</body>
+</html>

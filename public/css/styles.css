@@ -1,0 +1,412 @@
+* {
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.headerAmarillo {
+    background-color: #EAC926;
+}
+
+.logoybusqueda {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+body {
+    background-color: #ebebeb;
+}
+
+.alineadoAlCentro {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+#movidoALaDerecha {
+    width: 2em;
+    margin: 0 0 0 10px;
+}
+
+.listaAColorNegro {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul li {
+    list-style: none;
+    margin: 0% 0% 0% -10%;
+}
+
+.paraLaDerecha {
+    display: flex;
+    
+}
+
+.burger-menu {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    width: 40px;
+}
+
+.banner {
+    width: 100%;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+}
+
+article {
+    text-align: center;
+    padding: 10px 0;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover .descripcion {
+    display: block;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.iconoPrecioYD {
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+#camionDeCompras {
+    color: green;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px; 
+    transition: transform 1s;
+}
+
+article:hover #camionDeCompras {
+    transform: rotate(-90deg);
+}    
+
+.titular {
+    font-size: 24px;
+    display: block;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: green;
+}
+
+#tarjetaDeCredito {
+    color: #1259c3;
+    transition: color 0.5s;
+}
+
+#regalo {
+    color: #1259c3;
+    transition: color 0.5s;
+}
+
+#escudo {
+    color: #1259c3;
+    transition: color 0.5s;
+}
+
+.resaltador {
+    font-weight: 300px;
+}
+
+footer {
+    background-color: white;
+}
+
+.formularioRegistro {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    text-align: center;
+    margin: 8px;
+}
+
+.divDelFormulario {
+    padding: 3%;
+}
+
+
+input {
+    display: block;
+    width: 30%;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+.boton {
+    display: inline;
+    width: 14%;
+    background-color: #6479f3b3;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.boton:hover {
+    background-color: #0022AA;
+}
+
+.footer__ultimaSeccion {
+    padding: 8px 0;
+}
+
+.loginNombreDeUsuario {
+    text-align: center;
+    padding: 3%;
+}
+
+
+
+.loginContrasenia {
+    text-align: center;
+    padding: 3%;
+}
+
+.passwordInput {
+    margin: auto;
+}
+
+.botonEnviar {
+    text-align: center;
+}
+
+#tarjetaDeCredito:hover {
+    color: #EAC926;
+}
+
+#regalo:hover {
+    color: #EAC926;
+}
+
+#escudo:hover {
+    color: #EAC926;
+}
+
+@media (min-width: 361px) {
+    .logoybusqueda {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 10px 0px;
+    }
+    
+    .logoybusqueda .barraDeBusqueda {
+        display: none;
+    }
+
+    .logo {
+        padding: 0 10px;
+    }
+
+    .barraDeBusqueda {
+        margin: auto;
+    }
+
+
+    .lista {
+        display: none;
+    }
+    .descripcion {
+        display: none;
+    }
+}
+
+/* Tablet en adelante*/
+
+@media (min-width: 481px) {
+    /* Inicio del edit Header */
+    .logoybusqueda {
+        padding: 12px 0px 0px 0px;
+        justify-content: space-around;
+    }
+    
+    .logoybusqueda .barraDeBusqueda {
+        display: block;
+    }
+
+    .logo {
+        width: 33.3%;
+    }
+
+    .barraDeBusqueda input {
+        width: 100%;
+    }
+
+    .alineadoAlCentro {
+        text-align: center;
+        width: 33.3%;
+        padding: auto;
+    }
+
+    
+
+    /* Fin del edit Header */
+
+    /* Inicio del edit Lista */
+
+    .lista {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+
+    .lista .paraLaIzquierda {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 15px;
+        gap: 25px;
+    }
+
+    .lista .paraLaDerecha li {
+        margin: auto;
+        gap: 10px;
+    }
+
+    /* Fin del edit Lista */
+
+    .burger-menu {
+        display: none;
+    }
+    
+
+    /* Inicio del edit Article */
+
+    .ultimaVisita {
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 100%;
+        
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+
+    main .ultimaVisita article {
+        
+        width: 45%;
+    }
+}    
+/*PC en adelante*/
+
+@media (min-width: 769px) {
+    /* Inicio del edit Header */
+    .logoybusqueda, .alineadoAlCentro {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .logoybusqueda {
+        padding: 15px 10px 15px 10px;
+    }
+
+    .logoybusqueda .barraDeBusqueda {
+        display: block;
+    }
+
+    .alineadoAlCentro {
+        align-self: center;
+    }
+
+    .barraDeBusqueda {
+        margin: auto;
+    }
+
+
+    /* Fin del edit Header */
+
+    /* Inicio del edit Lista */
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista .paraLaIzquierda li {
+        align-self: center;
+        padding: 5px;
+    }
+
+    .lista .paraLaDerecha li {
+        margin: auto;
+    }
+
+    /* Fin del edit Lista */
+
+    /* Inicio del Article */
+
+    .ultimaVisita {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+    article {
+        margin: 10px;
+    }
+
+    .iconoPrecioYD p {
+        display: inline-block;
+        padding: 5px 8px;
+    }
+
+    article .iconoPrecioYD h4 {
+        padding: 8px;
+    }
+
+    /* Final del article */
+
+    .burger-menu {
+        display: none;
+    }
+    .descripcion:hover {
+        display: block;
+    }
+
+    .footer {
+        display: flex;
+        margin: 10px;
+    }
+}
